@@ -1,0 +1,14 @@
+https://medium.com/stashaway-engineering/building-your-first-cadence-workflow-e61a0b29785
+
+if running go 1.16.3
+To register the sample-domain successfully, run the following cmd for temp fix
+https://github.com/uber/cadence/issues/4013#issuecomment-785089460
+docker run --network=host --rm ubercadence/cli:master --domain sample-domain domain register --active_cluster active
+
+
+docker run --network=host --rm ubercadence/cli:master --domain sample-domain workflow start --tl <tasklistName> --wt <workflow_type> --et <execution_timeout> --dt <decision_timeout> -i '<input_value>'
+docker run --network=host --rm ubercadence/cli:master --domain sample-domain workflow terminate -w <workflowId> -r <runId> --re "<reason>"
+docker run --network=host --rm ubercadence/cli:master --domain sample-domain workflow signal -w <wid> -r <rid> -n <signal-name> -i '"signal-value"'
+
+
+The Worker: Where your business logic lives
