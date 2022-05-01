@@ -1,3 +1,8 @@
 Github link:
 https://github.com/goinaction/code
 
+Goroutines are functions that run concurrently with other goroutines, including the
+entry point of your program.
+In other languages, you’d use threads to accomplish the same thing, but in Go many goroutines execute on a single thread.
+
+Channels are data structures that enable safe data communication between goroutines.
