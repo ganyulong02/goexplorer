@@ -6,3 +6,20 @@ entry point of your program.
 In other languages, you’d use threads to accomplish the same thing, but in Go many goroutines execute on a single thread.
 
 Channels are data structures that enable safe data communication between goroutines.
+
+A good rule of thumb when declaring variables is:
+to use the keyword var when declaring variables that will be initialized to their zero value,
+and to use the short variable declaration operator(:=) when you’re providing extra initialization
+or making a function call.
+
+When looking up a key in a map, you have two options:
+you can assign a single variable or two variables for the lookup call.
+The first variable is always the value returned for the key lookup,
+and the second value, if specified, is a Boolean flag that reports whether the key exists or not.
+When a key doesn’t exist, the map will return the zero value for the type of value being stored in the map.
+When the key does exist, the map will return a copy of the value for that key.
+
+
+In Go, all variables are passed by value.
+Since the value of a pointer variable is the address to the memory being pointed to, passing pointer variables (*Feed)
+between functions is still considered a pass by value.

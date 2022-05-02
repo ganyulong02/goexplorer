@@ -20,6 +20,7 @@ func Run(searchTerm string) {
 	results := make(chan *Result)
 
 	// Setup a wait group so we can process all the feeds
+	// A WaitGroup is a counting semaphore
 	var waitGroup sync.WaitGroup
 
 	// Set the number of goroutines we need to wait for while
