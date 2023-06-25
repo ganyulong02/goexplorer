@@ -3,3 +3,7 @@ Youtube:
 https://www.youtube.com/watch?v=un6ZyFkqFKo&t=17341s
 Code:
 https://github.com/bootdotdev/fcc-learn-golang-assets
+
+Uber Cadence v1.0.0
+https://www.uber.com/en-US/blog/announcing-cadence
+https://github.com/uber/cadence/tree/v1.0.0
