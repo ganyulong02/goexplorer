@@ -1,0 +1,5 @@
+Go Programming - Golang Course with Bonus Projects
+Youtube:
+https://www.youtube.com/watch?v=un6ZyFkqFKo&t=17341s
+Code:
+https://github.com/bootdotdev/fcc-learn-golang-assets
